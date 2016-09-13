@@ -8,7 +8,7 @@ class CreateNewFile
     response = HTTP.accept('application/json')
                    .post(file_url,
                          json: {
-                           slide_name: filename,
+                           slide_name: slide_name,
                            document: base64_encode_document
                            })
     new_file = response.parse
