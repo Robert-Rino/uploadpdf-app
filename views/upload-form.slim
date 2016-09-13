@@ -1,0 +1,11 @@
+form action="http://localhost:9292/api/v1/courses/1/pdfs" enctype="multipart/form-data" method="post"
+  p
+    | Type some text (if you like):
+    br/
+    input name="textline" size="30" type="text" /
+  p
+    | Please specify a file, or a set of files:
+    br/
+    input name="datafile" size="40" type="file" /
+  div
+    input type="submit" value="Send" /
